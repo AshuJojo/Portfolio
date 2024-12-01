@@ -18,5 +18,23 @@ export const AboutMe: CollectionConfig = {
       type: "text",
       required: true,
     },
+    {
+      name: "title",
+      type: "text",
+      required: true,
+    },
+    {
+      name: "bio",
+      type: "textarea",
+      required: true,
+    },
+    {
+      name: "profile picture",
+      type: "upload",
+      relationTo: "media",
+      filterOptions: {
+        mimeType: { contains: "image" },
+      },
+    },
   ],
 };

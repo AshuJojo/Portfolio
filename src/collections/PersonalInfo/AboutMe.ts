@@ -1,19 +1,22 @@
 import type { CollectionConfig } from "payload";
 
-export const Media: CollectionConfig = {
-  slug: "media",
+export const AboutMe: CollectionConfig = {
+  slug: "aboutme",
   access: {
     read: () => true,
   },
   admin: {
-    group: "Default",
+    group: "Personal Info",
+  },
+  labels: {
+    plural: "About Me",
+    singular: "About Me",
   },
   fields: [
     {
-      name: "alt",
+      name: "name",
       type: "text",
       required: true,
     },
   ],
-  upload: true,
 };

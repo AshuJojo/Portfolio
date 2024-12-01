@@ -36,5 +36,15 @@ export const AboutMe: CollectionConfig = {
         mimeType: { contains: "image" },
       },
     },
+    {
+      name: "resume",
+      type: "upload",
+      relationTo: "media",
+      filterOptions: {
+        mimeType: {
+          contains: "application/pdf",
+        },
+      },
+    },
   ],
 };

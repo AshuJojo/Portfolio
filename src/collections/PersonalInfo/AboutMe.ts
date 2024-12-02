@@ -15,29 +15,35 @@ export const AboutMe: CollectionConfig = {
   fields: [
     {
       name: "name",
+      label: "Name",
       type: "text",
       required: true,
     },
     {
       name: "title",
+      label: "Title",
       type: "text",
       required: true,
     },
     {
       name: "bio",
+      label: "Bio",
       type: "textarea",
       required: true,
     },
     {
-      name: "profile picture",
+      name: "profile_pic",
+      label: "Profile Picture",
       type: "upload",
       relationTo: "media",
       filterOptions: {
         mimeType: { contains: "image" },
       },
+      required: false,
     },
     {
       name: "resume",
+      label: "Resume",
       type: "upload",
       relationTo: "media",
       filterOptions: {
@@ -45,6 +51,41 @@ export const AboutMe: CollectionConfig = {
           contains: "application/pdf",
         },
       },
+      required: false,
+    },
+    {
+      name: "social_links",
+      label: "Social Links",
+      type: "array",
+      labels: {
+        singular: "Social Link",
+        plural: "Social Links",
+      },
+      fields: [
+        {
+          name: "title",
+          label: "Title",
+          type: "text",
+          required: true,
+        },
+        {
+          name: "link",
+          label: "Link",
+          type: "text",
+          required: true,
+        },
+        {
+          name: "logo",
+          label: "Logo",
+          type: "upload",
+          relationTo: "media",
+          filterOptions: {
+            mimeType: { contains: "image" },
+          },
+          required: true,
+        },
+      ],
+      required: false,
     },
   ],
 };

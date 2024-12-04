@@ -5,6 +5,7 @@
  * DO NOT MODIFY IT BY HAND. Instead, modify your source Payload config,
  * and re-run `payload generate:types` to regenerate this file.
  */
+
 export interface Config {
   auth: {
     users: UserAuthOperations;
@@ -12,16 +13,38 @@ export interface Config {
   collections: {
     users: User;
     media: Media;
-    "payload-preferences": PayloadPreference;
-    "payload-migrations": PayloadMigration;
+    aboutme: Aboutme;
+    projects: Project;
+    'skill-categories': SkillCategory;
+    skills: Skill;
+    'payload-locked-documents': PayloadLockedDocument;
+    'payload-preferences': PayloadPreference;
+    'payload-migrations': PayloadMigration;
+  };
+  collectionsJoins: {};
+  collectionsSelect: {
+    users: UsersSelect<false> | UsersSelect<true>;
+    media: MediaSelect<false> | MediaSelect<true>;
+    aboutme: AboutmeSelect<false> | AboutmeSelect<true>;
+    projects: ProjectsSelect<false> | ProjectsSelect<true>;
+    'skill-categories': SkillCategoriesSelect<false> | SkillCategoriesSelect<true>;
+    skills: SkillsSelect<false> | SkillsSelect<true>;
+    'payload-locked-documents': PayloadLockedDocumentsSelect<false> | PayloadLockedDocumentsSelect<true>;
+    'payload-preferences': PayloadPreferencesSelect<false> | PayloadPreferencesSelect<true>;
+    'payload-migrations': PayloadMigrationsSelect<false> | PayloadMigrationsSelect<true>;
   };
   db: {
     defaultIDType: string;
   };
   globals: {};
+  globalsSelect: {};
   locale: null;
   user: User & {
-    collection: "users";
+    collection: 'users';
+  };
+  jobs: {
+    tasks: unknown;
+    workflows: unknown;
   };
 }
 export interface UserAuthOperations {
@@ -80,12 +103,132 @@ export interface Media {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "aboutme".
+ */
+export interface Aboutme {
+  id: string;
+  name: string;
+  title: string;
+  bio: string;
+  profile_pic?: (string | null) | Media;
+  resume?: (string | null) | Media;
+  social_links?:
+    | {
+        title: string;
+        link: string;
+        logo: string | Media;
+        id?: string | null;
+      }[]
+    | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "projects".
+ */
+export interface Project {
+  id: string;
+  title: string;
+  screenshots?:
+    | {
+        screenshot?: (string | null) | Media;
+        alt: string;
+        id?: string | null;
+      }[]
+    | null;
+  live_url?: string | null;
+  github_url?: string | null;
+  start_date: string;
+  in_progress?: boolean | null;
+  end_date?: string | null;
+  description: {
+    root: {
+      type: string;
+      children: {
+        type: string;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  };
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "skill-categories".
+ */
+export interface SkillCategory {
+  id: string;
+  name: string;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "skills".
+ */
+export interface Skill {
+  id: string;
+  categories?: (string | SkillCategory)[] | null;
+  skill: string;
+  icon: string | Media;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "payload-locked-documents".
+ */
+export interface PayloadLockedDocument {
+  id: string;
+  document?:
+    | ({
+        relationTo: 'users';
+        value: string | User;
+      } | null)
+    | ({
+        relationTo: 'media';
+        value: string | Media;
+      } | null)
+    | ({
+        relationTo: 'aboutme';
+        value: string | Aboutme;
+      } | null)
+    | ({
+        relationTo: 'projects';
+        value: string | Project;
+      } | null)
+    | ({
+        relationTo: 'skill-categories';
+        value: string | SkillCategory;
+      } | null)
+    | ({
+        relationTo: 'skills';
+        value: string | Skill;
+      } | null);
+  globalSlug?: string | null;
+  user: {
+    relationTo: 'users';
+    value: string | User;
+  };
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "payload-preferences".
  */
 export interface PayloadPreference {
   id: string;
   user: {
-    relationTo: "users";
+    relationTo: 'users';
     value: string | User;
   };
   key?: string | null;
@@ -114,12 +257,141 @@ export interface PayloadMigration {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "users_select".
+ */
+export interface UsersSelect<T extends boolean = true> {
+  updatedAt?: T;
+  createdAt?: T;
+  email?: T;
+  resetPasswordToken?: T;
+  resetPasswordExpiration?: T;
+  salt?: T;
+  hash?: T;
+  loginAttempts?: T;
+  lockUntil?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "media_select".
+ */
+export interface MediaSelect<T extends boolean = true> {
+  alt?: T;
+  updatedAt?: T;
+  createdAt?: T;
+  url?: T;
+  thumbnailURL?: T;
+  filename?: T;
+  mimeType?: T;
+  filesize?: T;
+  width?: T;
+  height?: T;
+  focalX?: T;
+  focalY?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "aboutme_select".
+ */
+export interface AboutmeSelect<T extends boolean = true> {
+  name?: T;
+  title?: T;
+  bio?: T;
+  profile_pic?: T;
+  resume?: T;
+  social_links?:
+    | T
+    | {
+        title?: T;
+        link?: T;
+        logo?: T;
+        id?: T;
+      };
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "projects_select".
+ */
+export interface ProjectsSelect<T extends boolean = true> {
+  title?: T;
+  screenshots?:
+    | T
+    | {
+        screenshot?: T;
+        alt?: T;
+        id?: T;
+      };
+  live_url?: T;
+  github_url?: T;
+  start_date?: T;
+  in_progress?: T;
+  end_date?: T;
+  description?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "skill-categories_select".
+ */
+export interface SkillCategoriesSelect<T extends boolean = true> {
+  name?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "skills_select".
+ */
+export interface SkillsSelect<T extends boolean = true> {
+  categories?: T;
+  skill?: T;
+  icon?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "payload-locked-documents_select".
+ */
+export interface PayloadLockedDocumentsSelect<T extends boolean = true> {
+  document?: T;
+  globalSlug?: T;
+  user?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "payload-preferences_select".
+ */
+export interface PayloadPreferencesSelect<T extends boolean = true> {
+  user?: T;
+  key?: T;
+  value?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "payload-migrations_select".
+ */
+export interface PayloadMigrationsSelect<T extends boolean = true> {
+  name?: T;
+  batch?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "auth".
  */
 export interface Auth {
   [k: string]: unknown;
 }
 
-declare module "payload" {
+
+declare module 'payload' {
   export interface GeneratedTypes extends Config {}
 }

@@ -7,6 +7,7 @@ export const AboutMe: CollectionConfig = {
   },
   admin: {
     group: "Personal Info",
+    useAsTitle: "name",
   },
   labels: {
     plural: "About Me",

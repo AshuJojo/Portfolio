@@ -7,6 +7,7 @@ export const Skills: CollectionConfig = {
   },
   admin: {
     group: "Personal Info",
+    useAsTitle: 'skill'
   },
   labels: {
     singular: "Skill",
@@ -17,8 +18,8 @@ export const Skills: CollectionConfig = {
       name: "categories",
       label: "Categories",
       type: "relationship",
-      hasMany: true,
-      relationTo: "skill-categories",
+      relationTo: 'skill-categories',
+      hasMany: true
     },
     {
       name: "skill",

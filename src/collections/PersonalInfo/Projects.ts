@@ -7,6 +7,7 @@ export const Projects: CollectionConfig = {
   },
   admin: {
     group: "Personal Info",
+    useAsTitle: 'title'
   },
   labels: {
     singular: "Project",

@@ -7,6 +7,7 @@ export const SkillCategories: CollectionConfig = {
   },
   admin: {
     group: "Personal Info",
+    useAsTitle: 'name'
   },
   labels: {
     singular: "Skill Category",

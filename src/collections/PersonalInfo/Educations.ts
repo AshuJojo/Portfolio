@@ -1,28 +1,28 @@
 import { CollectionConfig } from "payload";
 
-export const Experiences: CollectionConfig = {
-  slug: "experiences",
+export const Educations: CollectionConfig = {
+  slug: "educations",
   access: {
     read: () => true,
   },
   labels: {
-    singular: "Experience",
-    plural: "Experiences",
+    singular: "Education",
+    plural: "Educations",
   },
   admin: {
-    useAsTitle: "company_name",
     group: "Personal Info",
+    useAsTitle: "institute_name",
   },
   fields: [
     {
-      name: "company_name",
-      label: "Company Name",
+      name: "institute_name",
+      label: "Institute Name",
       type: "text",
       required: true,
     },
     {
-      name: "role",
-      label: "Role",
+      name: "degree",
+      label: "Degree",
       type: "text",
       required: true,
     },
@@ -35,7 +35,7 @@ export const Experiences: CollectionConfig = {
     },
     {
       name: "is_current",
-      label: "Are you currently working here?",
+      label: "Are you currently studying here?",
       type: "checkbox",
       defaultValue: false,
     },
@@ -54,8 +54,8 @@ export const Experiences: CollectionConfig = {
       required: false,
     },
     {
-      name: "company_logo",
-      label: "Company Logo",
+      name: "institute_logo",
+      label: "Institute Logo",
       type: "upload",
       relationTo: "media",
       required: false,

@@ -14,6 +14,7 @@ import { Projects } from "./collections/PersonalInfo/Projects";
 import { SkillCategories } from "./collections/PersonalInfo/SkillCategories";
 import { Skills } from "./collections/PersonalInfo/Skills";
 import { Experiences } from "./collections/PersonalInfo/Experiences";
+import { Educations } from "./collections/PersonalInfo/Educations";
 
 const filename = fileURLToPath(import.meta.url);
 const dirname = path.dirname(filename);
@@ -33,6 +34,7 @@ export default buildConfig({
     SkillCategories,
     Skills,
     Experiences,
+    Educations,
   ],
   editor: lexicalEditor(),
   secret: process.env.PAYLOAD_SECRET || "",

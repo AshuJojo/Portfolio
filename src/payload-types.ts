@@ -136,33 +136,13 @@ export interface Aboutme {
 export interface Project {
   id: string;
   title: string;
-  screenshots?:
-    | {
-        screenshot?: (string | null) | Media;
-        alt: string;
-        id?: string | null;
-      }[]
-    | null;
-  live_url?: string | null;
-  github_url?: string | null;
+  thumbnail?: (string | null) | Media;
   start_date: string;
   in_progress?: boolean | null;
   end_date?: string | null;
-  description: {
-    root: {
-      type: string;
-      children: {
-        type: string;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  };
+  live_url?: string | null;
+  github_url?: string | null;
+  short_description: string;
   updatedAt: string;
   createdAt: string;
 }
@@ -419,19 +399,13 @@ export interface AboutmeSelect<T extends boolean = true> {
  */
 export interface ProjectsSelect<T extends boolean = true> {
   title?: T;
-  screenshots?:
-    | T
-    | {
-        screenshot?: T;
-        alt?: T;
-        id?: T;
-      };
-  live_url?: T;
-  github_url?: T;
+  thumbnail?: T;
   start_date?: T;
   in_progress?: T;
   end_date?: T;
-  description?: T;
+  live_url?: T;
+  github_url?: T;
+  short_description?: T;
   updatedAt?: T;
   createdAt?: T;
 }

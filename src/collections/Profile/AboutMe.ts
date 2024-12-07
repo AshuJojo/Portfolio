@@ -44,7 +44,7 @@ export const AboutMe: CollectionConfig = {
     },
     {
       name: "resume",
-      label: "Resume",
+      label: "Resume (PDF only)",
       type: "upload",
       relationTo: "media",
       filterOptions: {

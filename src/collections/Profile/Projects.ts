@@ -7,7 +7,7 @@ export const Projects: CollectionConfig = {
   },
   admin: {
     group: "Profile",
-    useAsTitle: 'title'
+    useAsTitle: "title",
   },
   labels: {
     singular: "Project",
@@ -21,42 +21,10 @@ export const Projects: CollectionConfig = {
       required: true,
     },
     {
-      name: "screenshots",
-      label: "Screenshots",
-      type: "array",
-      fields: [
-        {
-          name: "screenshot",
-          label: "Screenshot",
-          type: "upload",
-          relationTo: "media",
-          filterOptions: {
-            mimeType: {
-              contains: "image",
-            },
-          },
-        },
-        {
-          name: "alt",
-          label: "Alt",
-          type: "text",
-          required: true,
-        },
-      ],
-
-      required: false,
-    },
-    {
-      name: "live_url",
-      label: "Live URL",
-      type: "text",
-      required: false,
-    },
-    {
-      name: "github_url",
-      label: "Github URL",
-      type: "text",
-      required: false,
+      name: "thumbnail",
+      label: "Thumbnail",
+      type: "upload",
+      relationTo: "media",
     },
     {
       name: "start_date",
@@ -86,9 +54,21 @@ export const Projects: CollectionConfig = {
       required: false,
     },
     {
-      name: "description",
-      label: "Description",
-      type: "richText",
+      name: "live_url",
+      label: "Live URL",
+      type: "text",
+      required: false,
+    },
+    {
+      name: "github_url",
+      label: "Github URL",
+      type: "text",
+      required: false,
+    },
+    {
+      name: "short_description",
+      label: "Short Description",
+      type: "textarea",
       required: true,
     },
   ],

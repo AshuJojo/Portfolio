@@ -10,7 +10,7 @@ export const Educations: CollectionConfig = {
     plural: "Educations",
   },
   admin: {
-    group: "Personal Info",
+    group: "Profile",
     useAsTitle: "institute_name",
   },
   fields: [

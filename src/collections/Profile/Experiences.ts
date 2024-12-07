@@ -11,7 +11,7 @@ export const Experiences: CollectionConfig = {
   },
   admin: {
     useAsTitle: "company_name",
-    group: "Personal Info",
+    group: "Profile",
   },
   fields: [
     {

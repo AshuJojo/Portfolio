@@ -6,7 +6,7 @@ export const SkillCategories: CollectionConfig = {
     read: () => true,
   },
   admin: {
-    group: "Personal Info",
+    group: "Profile",
     useAsTitle: 'name'
   },
   labels: {

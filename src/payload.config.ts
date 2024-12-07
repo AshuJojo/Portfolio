@@ -8,13 +8,13 @@ import sharp from "sharp";
 import { fileURLToPath } from "url";
 
 import { Media } from "./collections/Media";
-import { AboutMe } from "./collections/PersonalInfo/AboutMe";
+import { AboutMe } from "./collections/Profile/AboutMe";
 import { Users } from "./collections/Users";
-import { Projects } from "./collections/PersonalInfo/Projects";
-import { SkillCategories } from "./collections/PersonalInfo/SkillCategories";
-import { Skills } from "./collections/PersonalInfo/Skills";
-import { Experiences } from "./collections/PersonalInfo/Experiences";
-import { Educations } from "./collections/PersonalInfo/Educations";
+import { Projects } from "./collections/Profile/Projects";
+import { SkillCategories } from "./collections/Profile/SkillCategories";
+import { Skills } from "./collections/Profile/Skills";
+import { Experiences } from "./collections/Profile/Experiences";
+import { Educations } from "./collections/Profile/Educations";
 import { ContactRequests } from "./collections/Messages/ContactRequests";
 
 const filename = fileURLToPath(import.meta.url);

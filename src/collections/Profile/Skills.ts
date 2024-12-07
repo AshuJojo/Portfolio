@@ -6,8 +6,8 @@ export const Skills: CollectionConfig = {
     read: () => true,
   },
   admin: {
-    group: "Personal Info",
-    useAsTitle: 'skill'
+    group: "Profile",
+    useAsTitle: "skill",
   },
   labels: {
     singular: "Skill",
@@ -18,8 +18,8 @@ export const Skills: CollectionConfig = {
       name: "categories",
       label: "Categories",
       type: "relationship",
-      relationTo: 'skill-categories',
-      hasMany: true
+      relationTo: "skill-categories",
+      hasMany: true,
     },
     {
       name: "skill",

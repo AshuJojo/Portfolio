@@ -6,7 +6,7 @@ export const Projects: CollectionConfig = {
     read: () => true,
   },
   admin: {
-    group: "Personal Info",
+    group: "Profile",
     useAsTitle: 'title'
   },
   labels: {

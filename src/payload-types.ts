@@ -18,7 +18,6 @@ export interface Config {
     'skill-categories': SkillCategory;
     skills: Skill;
     experiences: Experience;
-    educations: Education;
     'contact-requests': ContactRequest;
     'payload-locked-documents': PayloadLockedDocument;
     'payload-preferences': PayloadPreference;
@@ -33,7 +32,6 @@ export interface Config {
     'skill-categories': SkillCategoriesSelect<false> | SkillCategoriesSelect<true>;
     skills: SkillsSelect<false> | SkillsSelect<true>;
     experiences: ExperiencesSelect<false> | ExperiencesSelect<true>;
-    educations: EducationsSelect<false> | EducationsSelect<true>;
     'contact-requests': ContactRequestsSelect<false> | ContactRequestsSelect<true>;
     'payload-locked-documents': PayloadLockedDocumentsSelect<false> | PayloadLockedDocumentsSelect<true>;
     'payload-preferences': PayloadPreferencesSelect<false> | PayloadPreferencesSelect<true>;
@@ -200,36 +198,6 @@ export interface Experience {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "educations".
- */
-export interface Education {
-  id: string;
-  institute_name: string;
-  degree: string;
-  start_date: string;
-  is_current?: boolean | null;
-  end_date?: string | null;
-  institute_logo?: (string | null) | Media;
-  description?: {
-    root: {
-      type: string;
-      children: {
-        type: string;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  } | null;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "contact-requests".
  */
 export interface ContactRequest {
@@ -288,10 +256,6 @@ export interface PayloadLockedDocument {
     | ({
         relationTo: 'experiences';
         value: string | Experience;
-      } | null)
-    | ({
-        relationTo: 'educations';
-        value: string | Education;
       } | null)
     | ({
         relationTo: 'contact-requests';
@@ -440,21 +404,6 @@ export interface ExperiencesSelect<T extends boolean = true> {
   is_current?: T;
   end_date?: T;
   company_logo?: T;
-  description?: T;
-  updatedAt?: T;
-  createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "educations_select".
- */
-export interface EducationsSelect<T extends boolean = true> {
-  institute_name?: T;
-  degree?: T;
-  start_date?: T;
-  is_current?: T;
-  end_date?: T;
-  institute_logo?: T;
   description?: T;
   updatedAt?: T;
   createdAt?: T;

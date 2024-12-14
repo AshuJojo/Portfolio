@@ -14,7 +14,6 @@ import { Projects } from "./collections/Profile/Projects";
 import { SkillCategories } from "./collections/Profile/SkillCategories";
 import { Skills } from "./collections/Profile/Skills";
 import { Experiences } from "./collections/Profile/Experiences";
-import { Educations } from "./collections/Profile/Educations";
 import { ContactRequests } from "./collections/Messages/ContactRequests";
 
 const filename = fileURLToPath(import.meta.url);
@@ -35,7 +34,6 @@ export default buildConfig({
     SkillCategories,
     Skills,
     Experiences,
-    Educations,
     ContactRequests,
   ],
   editor: lexicalEditor(),

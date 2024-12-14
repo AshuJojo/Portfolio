@@ -27,6 +27,7 @@ export default {
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
+          dark: "hsl(var(--secondary-dark))",
           foreground: "hsl(var(--secondary-foreground))",
         },
         muted: {
@@ -56,6 +57,9 @@ export default {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+      },
+      dropShadow: {
+        "4xl": "4px 4px 0 #7A7AFF",
       },
     },
   },

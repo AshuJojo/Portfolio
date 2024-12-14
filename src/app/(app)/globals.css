@@ -14,6 +14,7 @@
     --primary: 0 100% 79%;
     --primary-foreground: 0 0% 100%;
     --secondary: 240 100% 82%;
+    --secondary-dark: 240, 100%, 74%;
     --secondary-foreground: 0 0% 10%;
     --muted: 240 100% 82%;
     --muted-foreground: 240 100% 65%;
@@ -60,6 +61,7 @@
   }
 }
 
+
 @layer base {
   * {
     @apply border-border;
@@ -67,5 +69,14 @@
 
   body {
     @apply bg-background text-foreground;
+  }
+
+  .title {
+    @apply scroll-m-20 text-center font-extrabold italic text-primary-foreground text-3xl sm:text-5xl md:text-6xl;
+  }
+
+  .text-stroke-4 {
+    -webkit-text-stroke: 4px #7A7AFF;
+    paint-order: stroke fill;
   }
 }

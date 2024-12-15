@@ -58,9 +58,6 @@ export default {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
-      dropShadow: {
-        "4xl": "4px 4px 0 #7A7AFF",
-      },
       screens: {
         xs: "320px",
         sm: "640px",
@@ -68,6 +65,18 @@ export default {
         lg: "1024px",
         xl: "1280px",
         "2xl": "1536px",
+      },
+      container: {
+        padding: {
+          DEFAULT: "1rem",
+          sm: "2rem",
+          lg: "4rem",
+          xl: "5rem",
+          "2xl": "6rem",
+        },
+      },
+      dropShadow: {
+        "4xl": "4px 4px 0 #7A7AFF",
       },
     },
   },

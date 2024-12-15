@@ -25,7 +25,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-primary py-2 my-2 border-y-4 border-black ">
+    <nav className="bg-primary py-2 border-y-4 border-black ">
       <div className="container flex gap-6 justify-center items-center font-bold">
         {navLinks.map((link, idx) => (
           <Link key={idx} href={link.url}>

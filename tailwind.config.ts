@@ -74,6 +74,7 @@ export default {
           xl: "5rem",
           "2xl": "6rem",
         },
+        center: true,
       },
       dropShadow: {
         "4xl": "4px 4px 0 #7A7AFF",

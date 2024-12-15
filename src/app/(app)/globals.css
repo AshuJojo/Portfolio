@@ -71,10 +71,6 @@
     @apply bg-background text-foreground;
   }
 
-  .title {
-    @apply scroll-m-20 text-center font-extrabold italic text-primary-foreground text-3xl sm:text-5xl md:text-6xl;
-  }
-
   .text-stroke-4 {
     -webkit-text-stroke: 4px #7A7AFF;
     paint-order: stroke fill;

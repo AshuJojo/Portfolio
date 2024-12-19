@@ -33,8 +33,9 @@ const buttonVariants = cva(
       dropShadow: {
         default: "drop-shadow-xl",
         sm: "drop-shadow-2xl",
-        lg: "drop-shadow-3xl",
-        xl: "drop-shadow-4xl",
+        md: "drop-shadow-3xl",
+        lg: "drop-shadow-4xl",
+        none: '',
       },
     },
     defaultVariants: {

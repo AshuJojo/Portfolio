@@ -20,7 +20,7 @@ const HeroSection = () => {
               that sometimes works on the first try. Turning caffeine into code
               and ideas into impact!
             </p>
-            <Button className="mx-auto my-4 text-black" dropShadow="xl">
+            <Button className="mx-auto my-4 text-black" dropShadow="sm">
               <Link href="#">Download Resume</Link>
             </Button>
           </div>

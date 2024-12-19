@@ -16,6 +16,6 @@ export const Media: CollectionConfig = {
     },
   ],
   upload: {
-    staticDir: '@/../assets/uploads',
+    staticDir: '@/../public/payload/uploads',
   },
 };

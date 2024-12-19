@@ -15,6 +15,7 @@ import { SkillCategories } from "./collections/Profile/SkillCategories";
 import { Skills } from "./collections/Profile/Skills";
 import { Experiences } from "./collections/Profile/Experiences";
 import { ContactRequests } from "./collections/Messages/ContactRequests";
+import { uploadthingStorage } from "@payloadcms/storage-uploadthing";
 
 const filename = fileURLToPath(import.meta.url);
 const dirname = path.dirname(filename);
@@ -49,5 +50,14 @@ export default buildConfig({
   plugins: [
     payloadCloudPlugin(),
     // storage-adapter-placeholder
+    uploadthingStorage({
+      collections: {
+        media: true,
+      },
+      options: {
+        token: process.env.UPLOADTHING_TOKEN,
+        acl: "public-read",
+      },
+    }),
   ],
 });

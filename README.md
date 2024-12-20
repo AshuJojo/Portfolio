@@ -1,3 +1,10 @@
+## Installation
+
+```
+pnpm i
+pnpm run dev
+```
+
 ## Skills
 
 ### Resources

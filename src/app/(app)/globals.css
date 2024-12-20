@@ -84,4 +84,5 @@
   .section-heading {
     @apply py-4 text-center text-6xl text-primary-foreground tracking-wide font-extrabold text-stroke-4 drop-shadow-2xl;
   }
+
 }

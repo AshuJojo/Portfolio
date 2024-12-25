@@ -4,7 +4,8 @@ import { SkillCategory } from "@/payload-types";
 import { PaginatedResponse } from "@/types/PaginatedResponse";
 import axios, { AxiosResponse } from "axios";
 import { useEffect, useState } from "react";
-import { Button } from "../ui/button";
+import SkillCategoryTabs from "../SkillCategoryTabs";
+import { Skeleton } from "../ui/skeleton";
 
 const SkillsSection = () => {
   const [skillCategories, setSkillCategories] = useState<
@@ -25,6 +26,10 @@ const SkillsSection = () => {
     }
   };
 
+  const updateCurCategory = (categoryId: string) => {
+    setCurCategory(categoryId);
+  };
+
   useEffect(() => {
     (async () => {
       const data: SkillCategory[] | null = await fetchSkillCategories();
@@ -39,40 +44,23 @@ const SkillsSection = () => {
       {/* Skills Container */}
       <div className="flex flex-col gap-4 min-h-[80vh]">
         {/* Skills Categories */}
-        <div className="flex gap-2">
-          <Button
-            className={
-              curCategory === ""
-                ? "rounded-full text-black font-bold disabled:opacity-100"
-                : "rounded-full text-black font-bold bg-white hover:bg-primary"
-            }
-            dropShadow={curCategory === "" ? "none" : "sm"}
-            disabled={curCategory === ""}
-            onClick={() => {
-              setCurCategory("");
-            }}
-          >
-            All
-          </Button>
-          {skillCategories &&
-            skillCategories.map((category) => (
-              <Button
-                key={category.id}
-                className={
-                  curCategory === category.id
-                    ? "rounded-full text-black font-bold disabled:opacity-100"
-                    : "rounded-full text-black font-bold bg-white hover:bg-primary"
-                }
-                dropShadow={curCategory === category.id ? "none" : "sm"}
-                disabled={curCategory === category.id}
-                onClick={() => {
-                  setCurCategory(category.id);
-                }}
-              >
-                {category.name}
-              </Button>
+        {!skillCategories && (
+          <div className="flex flex-wrap gap-2">
+            {[...Array(5)].map((_, i) => (
+              <Skeleton
+                key={i}
+                className="h-7 w-20 rounded-full bg-white border-2 border-black drop-shadow-2xl"
+              />
             ))}
-        </div>
+          </div>
+        )}
+        {skillCategories && (
+          <SkillCategoryTabs
+            skillCategories={skillCategories}
+            curCategory={curCategory}
+            updateCurCategory={updateCurCategory}
+          />
+        )}
         {/* Skills */}
         {/* <div className="bg-white flex-grow rounded-xl border-2 border-black drop-shadow-4xl"></div> */}
       </div>

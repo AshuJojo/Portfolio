@@ -1,42 +1,27 @@
 "use client";
 
-import { SkillCategory } from "@/payload-types";
+import { SkillCategories } from "@/collections/Profile/SkillCategories";
+import useFetch, { useFetchResponse } from "@/hooks/useFetch";
+import { Skill, SkillCategory } from "@/payload-types";
 import { PaginatedResponse } from "@/types/PaginatedResponse";
 import axios, { AxiosResponse } from "axios";
 import { useEffect, useState } from "react";
-import SkillCategoryTabs from "../SkillCategoryTabs";
 import { Skeleton } from "../ui/skeleton";
+import SkillCategoryTabs from "../SkillCategoryTabs";
 
 const SkillsSection = () => {
-  const [skillCategories, setSkillCategories] = useState<
-    SkillCategory[] | null
-  >(null);
+  // const [skills, setSkills] = useState<Skill[] | null>(null);
+  const {
+    data: skillCategories,
+    error: skillCategoriesError,
+    loading: skillCategoriesLoading,
+  } = useFetch<SkillCategory>("/api/skill-categories");
+
   const [curCategory, setCurCategory] = useState<string>("");
-
-  const fetchSkillCategories = async () => {
-    try {
-      const res: AxiosResponse<PaginatedResponse<SkillCategory>> =
-        await axios.get(`/api/skill-categories`);
-
-      return res.data.docs;
-    } catch (e: unknown) {
-      if (e instanceof Error) console.error(e.message);
-
-      return null;
-    }
-  };
 
   const updateCurCategory = (categoryId: string) => {
     setCurCategory(categoryId);
   };
-
-  useEffect(() => {
-    (async () => {
-      const data: SkillCategory[] | null = await fetchSkillCategories();
-
-      setSkillCategories(data);
-    })();
-  }, []);
 
   return (
     <div className="container min-h-screen border-b-4 border-black">
@@ -44,7 +29,7 @@ const SkillsSection = () => {
       {/* Skills Container */}
       <div className="flex flex-col gap-4 min-h-[80vh]">
         {/* Skills Categories */}
-        {!skillCategories && (
+        {(skillCategoriesLoading || skillCategoriesError) && (
           <div className="flex flex-wrap gap-2">
             {[...Array(5)].map((_, i) => (
               <Skeleton
@@ -62,7 +47,7 @@ const SkillsSection = () => {
           />
         )}
         {/* Skills */}
-        {/* <div className="bg-white flex-grow rounded-xl border-2 border-black drop-shadow-4xl"></div> */}
+        <div className="bg-white flex-grow rounded-xl border-2 border-black drop-shadow-4xl"></div>
       </div>
     </div>
   );

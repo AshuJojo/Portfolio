@@ -77,7 +77,7 @@ export default {
         center: true,
       },
       dropShadow: {
-        "xl": "1px 1px 0 #000000",
+        xl: "1px 1px 0 #000000",
         "2xl": "2px 2px 0 #000000",
         "3xl": "3px 3px 0 #000000",
         "4xl": "4px 4px 0 #000000",

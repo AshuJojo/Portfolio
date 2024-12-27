@@ -8,27 +8,27 @@ export interface useFetchResponse<T> {
 }
 
 const useFetch = <T>(url: string) => {
-    const [data, setData] = useState<T[] | null>(null);
-    const [error, setError] = useState<string | null>(null);
-    const [loading, setLoading] = useState<boolean>(true);
+  const [data, setData] = useState<T[] | null>(null);
+  const [error, setError] = useState<string | null>(null);
+  const [loading, setLoading] = useState<boolean>(true);
 
-    useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const res: AxiosResponse<PaginatedResponse<T>> = await axios.get(url);
-                setData(res.data.docs);
-            } catch (e: unknown) {
-                if (e instanceof Error) setError(e.message);
-                else setError("Some Error Occurred!");
-            } finally {
-                setLoading(false);
-            }
-        };
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const res: AxiosResponse<PaginatedResponse<T>> = await axios.get(url);
+        setData(res.data.docs);
+      } catch (e: unknown) {
+        if (e instanceof Error) setError(e.message);
+        else setError("Some Error Occurred!");
+      } finally {
+        setLoading(false);
+      }
+    };
 
-        fetchData();
-    }, [url]);
+    fetchData();
+  }, [url]);
 
-    return { data, error, loading };
+  return { data, error, loading };
 };
 
 export default useFetch;

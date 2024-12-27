@@ -71,11 +71,22 @@
     @apply bg-background text-foreground;
   }
 
+  
+}
+
+@layer utilities {
+  
+  .text-stroke-2 {
+    color: white;
+    -webkit-text-stroke: 2px #000000;
+    paint-order: stroke fill;
+  }
+  
   .text-stroke-4 {
     -webkit-text-stroke: 4px #000000;
     paint-order: stroke fill;
   }
-
+  
   .text-stroke-4-purple {
     -webkit-text-stroke: 4px #7A7AFF;
     paint-order: stroke fill;
@@ -84,5 +95,4 @@
   .section-heading {
     @apply py-4 text-center text-6xl text-primary-foreground tracking-wide font-extrabold text-stroke-4 drop-shadow-2xl;
   }
-
 }

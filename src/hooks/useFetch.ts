@@ -16,7 +16,7 @@ const useFetch = <T>(url: string) => {
     const fetchData = async () => {
       try {
         const res: AxiosResponse<PaginatedResponse<T>> = await axios.get(url);
-        console.log(`url: ${url} \n res`, res);
+        // console.log(`url: ${url} \n res`, res);
         setData(res.data.docs);
       } catch (e: unknown) {
         if (e instanceof Error) setError(e.message);

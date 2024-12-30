@@ -7,11 +7,11 @@ import SkillsSection from "@/components/sections/SkillsSection";
 export default function Home() {
   return (
     <>
-      <Header />
-      <Navbar />
+      {/* <Header />
+      <Navbar /> */}
       <main>
-        <HeroSection />
-        <SkillsSection />
+        {/* <HeroSection />
+        <SkillsSection /> */}
         <ExperiencesSection />
       </main>
     </>

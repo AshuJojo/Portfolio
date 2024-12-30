@@ -77,6 +77,7 @@ export default {
         center: true,
       },
       dropShadow: {
+        none: "0px 0px",
         xl: "1px 1px 0 #000000",
         "2xl": "2px 2px 0 #000000",
         "3xl": "3px 3px 0 #000000",
@@ -84,6 +85,15 @@ export default {
         "5xl": "5px 5px 0 #000000",
         "6xl": "6px 6px 0 #000000",
         "4xl-purple": "4px 4px 0 #7A7AFF",
+      },
+      boxShadow: {
+        none: "0px 0px",
+        xl: "1px 1px 0 #000000",
+        "2xl": "2px 2px 0 #000000",
+        "3xl": "3px 3px 0 #000000",
+        "4xl": "4px 4px 0 #000000",
+        "5xl": "5px 5px 0 #000000",
+        "6xl": "6px 6px 0 #000000",
       },
     },
   },

@@ -2,26 +2,26 @@
     "docs": [
         {
             "id": "67723e4724ffa0aa7a3f59f3",
-            "updatedAt": "2024-12-30T06:32:08.433Z",
+            "updatedAt": "2024-12-30T06:58:21.682Z",
             "company_name": "Nagarro Software Pvt. Ltd.",
             "role": "Trainee",
             "start_date": "2022-05-11T11:30:31.000Z",
             "is_current": false,
             "end_date": "2022-09-11T11:30:11.000Z",
             "company_logo": {
-                "id": "67723e0d24ffa0aa7a3f599d",
+                "id": "67724460eda149692e9cef03",
                 "alt": "Nagarro Logo",
-                "_key": "YXfPXWgH0oKeYZZZhfjgH0oKeZg6XSCqjtRQ3VTcNsbrwWpB",
-                "filename": "nagarro-logo.jpg",
-                "mimeType": "image/jpeg",
-                "filesize": 23426,
-                "width": 500,
-                "height": 500,
+                "_key": "YXfPXWgH0oKeeGEE9nTNbW9UqDixOh1jzyoafNktgcsCl62A",
+                "filename": "NA9.DE.png",
+                "mimeType": "image/png",
+                "filesize": 55688,
+                "width": 1561,
+                "height": 1263,
                 "focalX": 50,
                 "focalY": 50,
-                "createdAt": "2024-12-30T06:30:38.010Z",
-                "updatedAt": "2024-12-30T06:30:38.010Z",
-                "url": "/api/media/file/nagarro-logo.jpg",
+                "createdAt": "2024-12-30T06:57:36.944Z",
+                "updatedAt": "2024-12-30T06:57:36.944Z",
+                "url": "/api/media/file/NA9.DE.png",
                 "thumbnailURL": null
             },
             "description": {
@@ -114,19 +114,19 @@
             "is_current": false,
             "end_date": "2023-06-15T11:30:11.000Z",
             "company_logo": {
-                "id": "67723e0d24ffa0aa7a3f599d",
+                "id": "67724460eda149692e9cef03",
                 "alt": "Nagarro Logo",
-                "_key": "YXfPXWgH0oKeYZZZhfjgH0oKeZg6XSCqjtRQ3VTcNsbrwWpB",
-                "filename": "nagarro-logo.jpg",
-                "mimeType": "image/jpeg",
-                "filesize": 23426,
-                "width": 500,
-                "height": 500,
+                "_key": "YXfPXWgH0oKeeGEE9nTNbW9UqDixOh1jzyoafNktgcsCl62A",
+                "filename": "NA9.DE.png",
+                "mimeType": "image/png",
+                "filesize": 55688,
+                "width": 1561,
+                "height": 1263,
                 "focalX": 50,
                 "focalY": 50,
-                "createdAt": "2024-12-30T06:30:38.010Z",
-                "updatedAt": "2024-12-30T06:30:38.010Z",
-                "url": "/api/media/file/nagarro-logo.jpg",
+                "createdAt": "2024-12-30T06:57:36.944Z",
+                "updatedAt": "2024-12-30T06:57:36.944Z",
+                "url": "/api/media/file/NA9.DE.png",
                 "thumbnailURL": null
             },
             "description": {
@@ -210,7 +210,7 @@
                 }
             },
             "createdAt": "2024-12-30T06:31:16.546Z",
-            "updatedAt": "2024-12-30T06:31:16.546Z"
+            "updatedAt": "2024-12-30T06:57:44.016Z"
         }
     ],
     "totalDocs": 2,

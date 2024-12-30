@@ -11,7 +11,11 @@ const ExperiencesCarousel = () => {
     loading: experiencesLoading,
   } = useFetch<Experience>("/data/experiences.json");
 
-  return (experiences?.length ? <ExperienceCard experience={experiences[0]}/> : <></>);
+  return experiences?.length ? (
+    <ExperienceCard experience={experiences[0]} />
+  ) : (
+    <></>
+  );
 };
 
 export default ExperiencesCarousel;

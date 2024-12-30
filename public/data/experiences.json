@@ -1,0 +1,225 @@
+{
+    "docs": [
+        {
+            "id": "67723e4724ffa0aa7a3f59f3",
+            "updatedAt": "2024-12-30T06:32:08.433Z",
+            "company_name": "Nagarro Software Pvt. Ltd.",
+            "role": "Trainee",
+            "start_date": "2022-05-11T11:30:31.000Z",
+            "is_current": false,
+            "end_date": "2022-09-11T11:30:11.000Z",
+            "company_logo": {
+                "id": "67723e0d24ffa0aa7a3f599d",
+                "alt": "Nagarro Logo",
+                "_key": "YXfPXWgH0oKeYZZZhfjgH0oKeZg6XSCqjtRQ3VTcNsbrwWpB",
+                "filename": "nagarro-logo.jpg",
+                "mimeType": "image/jpeg",
+                "filesize": 23426,
+                "width": 500,
+                "height": 500,
+                "focalX": 50,
+                "focalY": 50,
+                "createdAt": "2024-12-30T06:30:38.010Z",
+                "updatedAt": "2024-12-30T06:30:38.010Z",
+                "url": "/api/media/file/nagarro-logo.jpg",
+                "thumbnailURL": null
+            },
+            "description": {
+                "root": {
+                    "children": [
+                        {
+                            "children": [
+                                {
+                                    "children": [
+                                        {
+                                            "detail": 0,
+                                            "format": 0,
+                                            "mode": "normal",
+                                            "style": "",
+                                            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                                            "type": "text",
+                                            "version": 1
+                                        }
+                                    ],
+                                    "direction": "ltr",
+                                    "format": "",
+                                    "indent": 0,
+                                    "type": "listitem",
+                                    "version": 1,
+                                    "value": 1
+                                },
+                                {
+                                    "children": [
+                                        {
+                                            "detail": 0,
+                                            "format": 0,
+                                            "mode": "normal",
+                                            "style": "",
+                                            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                                            "type": "text",
+                                            "version": 1
+                                        }
+                                    ],
+                                    "direction": "ltr",
+                                    "format": "",
+                                    "indent": 0,
+                                    "type": "listitem",
+                                    "version": 1,
+                                    "value": 2
+                                },
+                                {
+                                    "children": [
+                                        {
+                                            "detail": 0,
+                                            "format": 0,
+                                            "mode": "normal",
+                                            "style": "",
+                                            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                                            "type": "text",
+                                            "version": 1
+                                        }
+                                    ],
+                                    "direction": "ltr",
+                                    "format": "",
+                                    "indent": 0,
+                                    "type": "listitem",
+                                    "version": 1,
+                                    "value": 3
+                                }
+                            ],
+                            "direction": "ltr",
+                            "format": "",
+                            "indent": 0,
+                            "type": "list",
+                            "version": 1,
+                            "listType": "bullet",
+                            "start": 1,
+                            "tag": "ul"
+                        }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "root",
+                    "version": 1
+                }
+            },
+            "createdAt": "2024-12-30T06:31:35.859Z"
+        },
+        {
+            "id": "67723e3424ffa0aa7a3f59b4",
+            "company_name": "Nagarro Software Pvt. Ltd.",
+            "role": "Associate Engineer",
+            "start_date": "2022-09-11T11:30:31.000Z",
+            "is_current": false,
+            "end_date": "2023-06-15T11:30:11.000Z",
+            "company_logo": {
+                "id": "67723e0d24ffa0aa7a3f599d",
+                "alt": "Nagarro Logo",
+                "_key": "YXfPXWgH0oKeYZZZhfjgH0oKeZg6XSCqjtRQ3VTcNsbrwWpB",
+                "filename": "nagarro-logo.jpg",
+                "mimeType": "image/jpeg",
+                "filesize": 23426,
+                "width": 500,
+                "height": 500,
+                "focalX": 50,
+                "focalY": 50,
+                "createdAt": "2024-12-30T06:30:38.010Z",
+                "updatedAt": "2024-12-30T06:30:38.010Z",
+                "url": "/api/media/file/nagarro-logo.jpg",
+                "thumbnailURL": null
+            },
+            "description": {
+                "root": {
+                    "children": [
+                        {
+                            "children": [
+                                {
+                                    "children": [
+                                        {
+                                            "detail": 0,
+                                            "format": 0,
+                                            "mode": "normal",
+                                            "style": "",
+                                            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                                            "type": "text",
+                                            "version": 1
+                                        }
+                                    ],
+                                    "direction": "ltr",
+                                    "format": "",
+                                    "indent": 0,
+                                    "type": "listitem",
+                                    "version": 1,
+                                    "value": 1
+                                },
+                                {
+                                    "children": [
+                                        {
+                                            "detail": 0,
+                                            "format": 0,
+                                            "mode": "normal",
+                                            "style": "",
+                                            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                                            "type": "text",
+                                            "version": 1
+                                        }
+                                    ],
+                                    "direction": "ltr",
+                                    "format": "",
+                                    "indent": 0,
+                                    "type": "listitem",
+                                    "version": 1,
+                                    "value": 2
+                                },
+                                {
+                                    "children": [
+                                        {
+                                            "detail": 0,
+                                            "format": 0,
+                                            "mode": "normal",
+                                            "style": "",
+                                            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                                            "type": "text",
+                                            "version": 1
+                                        }
+                                    ],
+                                    "direction": "ltr",
+                                    "format": "",
+                                    "indent": 0,
+                                    "type": "listitem",
+                                    "version": 1,
+                                    "value": 3
+                                }
+                            ],
+                            "direction": "ltr",
+                            "format": "",
+                            "indent": 0,
+                            "type": "list",
+                            "version": 1,
+                            "listType": "bullet",
+                            "start": 1,
+                            "tag": "ul"
+                        }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "root",
+                    "version": 1
+                }
+            },
+            "createdAt": "2024-12-30T06:31:16.546Z",
+            "updatedAt": "2024-12-30T06:31:16.546Z"
+        }
+    ],
+    "totalDocs": 2,
+    "limit": 10,
+    "totalPages": 1,
+    "page": 1,
+    "pagingCounter": 1,
+    "hasPrevPage": false,
+    "hasNextPage": false,
+    "prevPage": null,
+    "nextPage": null
+}

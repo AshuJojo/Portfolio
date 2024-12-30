@@ -16,13 +16,13 @@ const SkillsSection = () => {
     data: skillCategories,
     error: skillCategoriesError,
     loading: skillCategoriesLoading,
-  } = useFetch<SkillCategory>("/data/skill-categories.json");
+  } = useFetch<SkillCategory>("/data/skill-categories.json"); // TODO: Change the URL on Production
 
   const {
     data: skills,
     error: skillsError,
     loading: skillsLoading,
-  } = useFetch<Skill>("/data/skills.json");
+  } = useFetch<Skill>("/data/skills.json"); // TODO: Change the URL on Production
 
   const updateCurCategory = (categoryId: string) => {
     setCurCategory(categoryId);

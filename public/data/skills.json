@@ -1,0 +1,227 @@
+{
+    "docs": [
+        {
+            "id": "67643322e8cb6cbce58f6d9b",
+            "categories": [
+                {
+                    "id": "676430a3e8cb6cbce58f6875",
+                    "name": "Frontend ",
+                    "createdAt": "2024-12-19T14:41:39.904Z",
+                    "updatedAt": "2024-12-19T14:41:39.904Z"
+                },
+                {
+                    "id": "6764321be8cb6cbce58f6cc6",
+                    "name": "Frameworks",
+                    "createdAt": "2024-12-19T14:47:55.407Z",
+                    "updatedAt": "2024-12-19T14:47:55.407Z"
+                }
+            ],
+            "skill": "Tailwind CSS",
+            "icon": {
+                "id": "6764369ee8cb6cbce58f71af",
+                "alt": "Tailwind CSS",
+                "_key": "YXfPXWgH0oKeWG0YufCUqxzvIeicXkBygY6NEmd7Z4QKs9VA",
+                "filename": "tailwindcss-original.svg",
+                "mimeType": "image/svg+xml",
+                "filesize": 689,
+                "width": 128,
+                "height": 128,
+                "createdAt": "2024-12-19T15:07:10.607Z",
+                "updatedAt": "2024-12-19T15:07:10.607Z",
+                "url": "/api/media/file/tailwindcss-original.svg",
+                "thumbnailURL": null
+            },
+            "createdAt": "2024-12-19T14:52:18.910Z",
+            "updatedAt": "2024-12-19T15:07:16.765Z"
+        },
+        {
+            "id": "676431f9e8cb6cbce58f6c2f",
+            "categories": [
+                {
+                    "id": "676430a3e8cb6cbce58f6875",
+                    "name": "Frontend ",
+                    "createdAt": "2024-12-19T14:41:39.904Z",
+                    "updatedAt": "2024-12-19T14:41:39.904Z"
+                }
+            ],
+            "skill": "NextJS",
+            "icon": {
+                "id": "676436dae8cb6cbce58f722b",
+                "alt": "NextJS",
+                "_key": "YXfPXWgH0oKelnqGnrTE2UoPIi96L0uMJ1kzf85QjcDFsXgC",
+                "filename": "nextjs-original.svg",
+                "mimeType": "image/svg+xml",
+                "filesize": 749,
+                "width": 128,
+                "height": 128,
+                "createdAt": "2024-12-19T15:08:10.391Z",
+                "updatedAt": "2024-12-19T15:08:10.391Z",
+                "url": "/api/media/file/nextjs-original.svg",
+                "thumbnailURL": null
+            },
+            "createdAt": "2024-12-19T14:47:21.405Z",
+            "updatedAt": "2024-12-19T15:08:12.409Z"
+        },
+        {
+            "id": "676431d2e8cb6cbce58f6bc9",
+            "categories": [
+                {
+                    "id": "676430a3e8cb6cbce58f6875",
+                    "name": "Frontend ",
+                    "createdAt": "2024-12-19T14:41:39.904Z",
+                    "updatedAt": "2024-12-19T14:41:39.904Z"
+                }
+            ],
+            "skill": "ReactJS",
+            "icon": {
+                "id": "67643707e8cb6cbce58f72c9",
+                "alt": "ReactJS",
+                "_key": "YXfPXWgH0oKesQGSNLUMLQyglwCJ0rdzkIYBqZ43DXWj7VUx",
+                "filename": "react-original.svg",
+                "mimeType": "image/svg+xml",
+                "filesize": 2387,
+                "width": 128,
+                "height": 128,
+                "createdAt": "2024-12-19T15:08:55.114Z",
+                "updatedAt": "2024-12-19T15:08:55.114Z",
+                "url": "/api/media/file/react-original.svg",
+                "thumbnailURL": null
+            },
+            "createdAt": "2024-12-19T14:46:42.550Z",
+            "updatedAt": "2024-12-19T15:08:57.814Z"
+        },
+        {
+            "id": "67643197e8cb6cbce58f6b43",
+            "categories": [
+                {
+                    "id": "676430a3e8cb6cbce58f6875",
+                    "name": "Frontend ",
+                    "createdAt": "2024-12-19T14:41:39.904Z",
+                    "updatedAt": "2024-12-19T14:41:39.904Z"
+                },
+                {
+                    "id": "676430aee8cb6cbce58f68aa",
+                    "name": "Backend",
+                    "createdAt": "2024-12-19T14:41:50.973Z",
+                    "updatedAt": "2024-12-19T14:41:50.973Z"
+                }
+            ],
+            "skill": "TypeScript",
+            "icon": {
+                "id": "67643747e8cb6cbce58f7390",
+                "alt": "TypeScript",
+                "_key": "YXfPXWgH0oKerf4eso97ns6i5NWO1QRdwxGm8pYtH0cagk34",
+                "filename": "typescript-original.svg",
+                "mimeType": "image/svg+xml",
+                "filesize": 943,
+                "width": 128,
+                "height": 128,
+                "createdAt": "2024-12-19T15:09:59.176Z",
+                "updatedAt": "2024-12-19T15:09:59.176Z",
+                "url": "/api/media/file/typescript-original.svg",
+                "thumbnailURL": null
+            },
+            "createdAt": "2024-12-19T14:45:43.903Z",
+            "updatedAt": "2024-12-19T15:10:01.770Z"
+        },
+        {
+            "id": "6764316de8cb6cbce58f6ad6",
+            "categories": [
+                {
+                    "id": "676430a3e8cb6cbce58f6875",
+                    "name": "Frontend ",
+                    "createdAt": "2024-12-19T14:41:39.904Z",
+                    "updatedAt": "2024-12-19T14:41:39.904Z"
+                },
+                {
+                    "id": "676430aee8cb6cbce58f68aa",
+                    "name": "Backend",
+                    "createdAt": "2024-12-19T14:41:50.973Z",
+                    "updatedAt": "2024-12-19T14:41:50.973Z"
+                }
+            ],
+            "skill": "JavaScript",
+            "icon": {
+                "id": "6764376ce8cb6cbce58f73f1",
+                "alt": "JavaScript",
+                "_key": "YXfPXWgH0oKegjtf1BDvCkK4ywSA1RZ5bFcrdYsxXh23palm",
+                "filename": "javascript-plain.svg",
+                "mimeType": "image/svg+xml",
+                "filesize": 1101,
+                "width": 128,
+                "height": 128,
+                "createdAt": "2024-12-19T15:10:36.658Z",
+                "updatedAt": "2024-12-19T15:10:36.658Z",
+                "url": "/api/media/file/javascript-plain.svg",
+                "thumbnailURL": null
+            },
+            "createdAt": "2024-12-19T14:45:01.387Z",
+            "updatedAt": "2024-12-19T15:10:42.957Z"
+        },
+        {
+            "id": "67643134e8cb6cbce58f6a3c",
+            "categories": [
+                {
+                    "id": "676430a3e8cb6cbce58f6875",
+                    "name": "Frontend ",
+                    "createdAt": "2024-12-19T14:41:39.904Z",
+                    "updatedAt": "2024-12-19T14:41:39.904Z"
+                }
+            ],
+            "skill": "CSS",
+            "icon": {
+                "id": "676437a0e8cb6cbce58f7452",
+                "alt": "CSS3",
+                "_key": "YXfPXWgH0oKe30YTCvWKa7OdpBPRn6cbGvIkJC1xDfEAQiSj",
+                "filename": "css3-plain.svg",
+                "mimeType": "image/svg+xml",
+                "filesize": 465,
+                "width": 128,
+                "height": 128,
+                "createdAt": "2024-12-19T15:11:28.791Z",
+                "updatedAt": "2024-12-19T15:11:28.791Z",
+                "url": "/api/media/file/css3-plain.svg",
+                "thumbnailURL": null
+            },
+            "createdAt": "2024-12-19T14:44:04.405Z",
+            "updatedAt": "2024-12-19T15:11:30.837Z"
+        },
+        {
+            "id": "676430f6e8cb6cbce58f6963",
+            "categories": [
+                {
+                    "id": "676430a3e8cb6cbce58f6875",
+                    "name": "Frontend ",
+                    "createdAt": "2024-12-19T14:41:39.904Z",
+                    "updatedAt": "2024-12-19T14:41:39.904Z"
+                }
+            ],
+            "skill": "HTML",
+            "icon": {
+                "id": "676437bee8cb6cbce58f74b3",
+                "alt": "HTML5",
+                "_key": "YXfPXWgH0oKelh7hajTE2UoPIi96L0uMJ1kzf85QjcDFsXgC",
+                "filename": "html5-plain.svg",
+                "mimeType": "image/svg+xml",
+                "filesize": 415,
+                "width": 128,
+                "height": 128,
+                "createdAt": "2024-12-19T15:11:58.220Z",
+                "updatedAt": "2024-12-19T15:11:58.220Z",
+                "url": "/api/media/file/html5-plain.svg",
+                "thumbnailURL": null
+            },
+            "createdAt": "2024-12-19T14:43:02.485Z",
+            "updatedAt": "2024-12-19T15:12:00.212Z"
+        }
+    ],
+    "totalDocs": 7,
+    "limit": 10,
+    "totalPages": 1,
+    "page": 1,
+    "pagingCounter": 1,
+    "hasPrevPage": false,
+    "hasNextPage": false,
+    "prevPage": null,
+    "nextPage": null
+}

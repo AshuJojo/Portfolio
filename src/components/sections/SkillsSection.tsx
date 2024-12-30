@@ -16,13 +16,13 @@ const SkillsSection = () => {
     data: skillCategories,
     error: skillCategoriesError,
     loading: skillCategoriesLoading,
-  } = useFetch<SkillCategory>("/api/skill-categories");
+  } = useFetch<SkillCategory>("/data/skill-categories.json");
 
   const {
     data: skills,
     error: skillsError,
     loading: skillsLoading,
-  } = useFetch<Skill>("/api/skills");
+  } = useFetch<Skill>("/data/skills.json");
 
   const updateCurCategory = (categoryId: string) => {
     setCurCategory(categoryId);
@@ -37,7 +37,8 @@ const SkillsSection = () => {
           if (!skill.categories) return true;
 
           return skill.categories.find(
-            (category) => typeof category !== "string" && category.id === curCategory
+            (category) =>
+              typeof category !== "string" && category.id === curCategory,
           );
         });
 

@@ -6,10 +6,10 @@ import SkillsSection from "@/components/sections/SkillsSection";
 export default function Home() {
   return (
     <>
-      {/* <Header />
-      <Navbar /> */}
+      <Header />
+      <Navbar />
       <main>
-        {/* <HeroSection /> */}
+        <HeroSection />
         <SkillsSection />
       </main>
     </>

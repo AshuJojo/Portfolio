@@ -2,6 +2,7 @@
 
 import useFetch from "@/hooks/useFetch";
 import { Experience } from "@/payload-types";
+import ExperienceCard from "./ExperienceCard";
 
 const ExperiencesCarousel = () => {
   const {
@@ -10,7 +11,7 @@ const ExperiencesCarousel = () => {
     loading: experiencesLoading,
   } = useFetch<Experience>("/data/experiences.json");
 
-  return <div>ExperiencesCarousel</div>;
+  return (experiences?.length ? <ExperienceCard experience={experiences[0]}/> : <></>);
 };
 
 export default ExperiencesCarousel;

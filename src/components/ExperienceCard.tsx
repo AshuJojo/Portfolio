@@ -38,7 +38,7 @@ const ExperienceCard = ({ experience }: ExperienceCardProps) => {
     differenceInMonths(end_date || new Date(), start_date) + 2;
 
   return (
-    <Card className="max-w-1/2 flex w-fit border-2 border-black p-8 drop-shadow-4xl">
+    <Card className="mb-4 mx-auto flex w-fit border-2 border-black p-8 drop-shadow-4xl">
       {/* Card Media */}
       <div className="h-fit w-fit rounded-full border-2 border-black p-2 shadow-4xl">
         <Image

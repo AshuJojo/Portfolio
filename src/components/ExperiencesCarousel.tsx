@@ -4,6 +4,13 @@ import useFetch from "@/hooks/useFetch";
 import { Experience } from "@/payload-types";
 import { useEffect, useState } from "react";
 import ExperienceCard from "./ExperienceCard";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "./ui/carousel";
 
 const ExperiencesCarousel = () => {
   const [sortedExperiences, setSortedExperiences] = useState<Experience[]>([]);
@@ -26,9 +33,17 @@ const ExperiencesCarousel = () => {
   }, [experiences]);
 
   return sortedExperiences?.length ? (
-    sortedExperiences.map((experience) => (
-      <ExperienceCard key={experience.id} experience={experience} />
-    ))
+    <Carousel>
+      <CarouselContent>
+        {sortedExperiences.map((experience) => (
+          <CarouselItem key={experience.id}>
+            <ExperienceCard experience={experience} />
+          </CarouselItem>
+        ))}
+      </CarouselContent>
+      <CarouselPrevious />
+      <CarouselNext />
+    </Carousel>
   ) : (
     <></>
   );

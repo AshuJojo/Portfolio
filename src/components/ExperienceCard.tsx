@@ -70,7 +70,6 @@ const ExperienceCard = ({ experience }: ExperienceCardProps) => {
         )}
       </CardContent>
     </Card>
-    
   );
 };
 

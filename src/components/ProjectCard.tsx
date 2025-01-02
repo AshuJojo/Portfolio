@@ -35,11 +35,11 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
     : "Present";
 
   return (
-    <Card className="h-auto w-fit overflow-hidden border-2 border-black drop-shadow-4xl">
+    <Card className="flex h-auto w-auto flex-col justify-between overflow-hidden border-2 border-black drop-shadow-4xl">
       {thumbnail && (
-        <div className="h-auto w-96">
+        <div className="h-auto w-auto">
           <Image
-            className="h-full w-full object-cover"
+            className="h-full w-full"
             src={
               typeof thumbnail === "string"
                 ? thumbnail
@@ -51,12 +51,14 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
           />
         </div>
       )}
-      <div className="h-auto p-4">
+      <div className="grow p-4">
         <h2 className="text-lg font-extrabold">{title}</h2>
         <p className="text-sm text-gray-600">
           {formattedStartDate} - {formattedEndDate}
         </p>
-        <p className="mt-2 text-sm text-gray-800">{short_description}</p>
+        <p className="mt-2 line-clamp-3 text-sm text-gray-800">
+          {short_description}
+        </p>
       </div>
       {(github_url || live_url) && (
         <div className="flex border-t-2 border-black">
@@ -64,6 +66,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
             <Link
               className="flex grow items-center justify-center gap-2 border-r-2 border-black py-2"
               href={github_url}
+              target="_blank"
             >
               Github
               <Image
@@ -75,7 +78,11 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
             </Link>
           )}
           {live_url && (
-            <Link className="flex grow items-center justify-center gap-2 py-2" href={live_url}>
+            <Link
+              className="flex grow items-center justify-center gap-2 py-2"
+              href={live_url}
+              target="_blank"
+            >
               Live URL
               <Image
                 src={ExternalLinkIcon}
